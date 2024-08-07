@@ -1,0 +1,68 @@
+---
+title: "Test WebR"
+
+filters:
+  - webr
+
+webr:
+  packages: ['ggplot2', 'dplyr']
+  autoload-packages: false  #doit faire le library() si true
+
+execute: 
+  message: false
+  warning: false
+  
+  
+---
+
+* Yaml de la page (ggplot2 et dplyr installés):
+
+```{.yaml}
+---
+title: "Test WebR"
+
+filters:
+  - webr
+
+webr:
+  packages: ['ggplot2', 'dplyr']
+  autoload-packages: false  #doit faire le library() si true
+
+execute: 
+  message: false
+  warning: false
+  
+---
+```
+
+
+* Installation manuelle d'un pkg: `webr::install("nom_pkg")`
+
+
+This is a webR-enabled code cell in a Quarto HTML document.  
+
+Entrer un code:
+
+```{webr-r}
+
+```
+
+
+Exécuter (modifier ce code): 
+
+```{webr-r}
+library(ggplot2)
+p = ggplot(mpg, aes(class, hwy))
+p + geom_boxplot()
+```
+
+
+```{=html}
+<style>
+.qwebr-icon-run-code {
+  color: #3d98ff;
+}
+</style>
+```
+
+
