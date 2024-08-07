@@ -36,19 +36,24 @@ execute:
 ```
 
 
+* Installation de l'extension:
+  Dans le terminal: `quarto add coatless/quarto-webr`
+* doc: <https://quarto-webr.thecoatlessprofessor.com/>  
+  
+
 * Installation manuelle d'un pkg: `webr::install("nom_pkg")`
 
 
-This is a webR-enabled code cell in a Quarto HTML document.  
 
-Entrer un code:
+
+**Entrer un code**:
 
 ```{webr-r}
 
 ```
 
 
-Exécuter (modifier ce code): 
+**Exécuter et/ modifier ce code**: 
 
 ```{webr-r}
 library(ggplot2)
